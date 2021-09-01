@@ -18,15 +18,8 @@ const app = new Vue({
     },
     //// Recall function to generate ten different emails
     created() {
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
-        this.getRandomEmail();
+        for (var i = 0; i < 10; i++) {
+            this.getRandomEmail();
+        };
     }
 });
