@@ -21,7 +21,7 @@
             Random email list:
         </header>
         <!--* MAIN -->
-        <ul>
+        <ul v-if="emailList.length === 10">
             <!--// Add v-for to print all emailList items -->
             <li v-for="email in emailList">{{email}}</li>
         </ul>
