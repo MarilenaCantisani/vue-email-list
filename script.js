@@ -16,4 +16,17 @@ const app = new Vue({
             });
         }
     },
+    //* Recall function to generate ten different emails
+    created() {
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+        this.getRandomEmail();
+    }
 });
