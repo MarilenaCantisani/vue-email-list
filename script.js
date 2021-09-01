@@ -1,14 +1,14 @@
 console.log("Vue ok", Vue);
 Vue.config.devtools = true;
 
-//// Initialization of "Vue"
+//* Initialization of "Vue"
 const app = new Vue({
     el: "#root",
     data: {
         emailList: [],
     },
     methods: {
-        //*Function that generates a random email
+        //// Function that generates a random email
         getRandomEmail() {
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((response) => {
                 console.log(response);
@@ -16,7 +16,7 @@ const app = new Vue({
             });
         }
     },
-    //* Recall function to generate ten different emails
+    //// Recall function to generate ten different emails
     created() {
         this.getRandomEmail();
         this.getRandomEmail();

@@ -16,10 +16,15 @@
 
 <body>
     <div id="root">
-        <!--// HEADER SECTION -->
+        <!--* HEADER SECTION -->
         <header>
             Random email list:
         </header>
+        <!--* MAIN -->
+        <ul>
+            <!--// Add v-for to print all emailList items -->
+            <li v-for="email in emailList">{{email}}</li>
+        </ul>
     </div>
     <script src="./script.js"></script>
 </body>
